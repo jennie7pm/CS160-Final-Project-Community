@@ -1,0 +1,111 @@
+#page {
+  display: flex;
+  background-color: azure;
+  height: "100%";
+  width: 100%;
+  padding: 155px 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  background: var(--background, #eee);
+}
+#Onboarding_card {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+
+  border-radius: 20px;
+  background: var(--white, #fff);
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: var(--primary, #4e5f99);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#fill_in0 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+#fill_in1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+#email_label,
+#password_label {
+  color: var(--grey, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#email_input,
+#password_input {
+  display: flex;
+  padding: 15px 20px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--background, #eee);
+  border: 0;
+}
+
+#login_button {
+  display: flex;
+  padding: 12px 15px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--primary, #4e5f99);
+  border: 0;
+
+  color: var(--white, #fff);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#frame98 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#text0 {
+  color: var(--black, #252525);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#text1 {
+  color: var(--primary, #4e5f99);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
