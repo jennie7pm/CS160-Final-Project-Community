@@ -166,6 +166,7 @@ p {
     h1{
         text-align: center;
         font-size: 35px;
+        line-height: normal;
     }
     .left{
         width: 85%;
