@@ -1,3 +1,8 @@
+import { NavBar } from "../toolbox/NavBar"
 export function Communities(){
-    return <div>test communities</div>
+    return ( <>
+                <NavBar/>
+                <div>test communities</div>
+            </>
+            )
 }
