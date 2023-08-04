@@ -1,12 +1,13 @@
 import "./Resume-Builder.css"
+
 export function ResumeBuilder() {
     return (
         // <p>test resume builder</p>
         <div className="resume-builder">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        1 of 2
+                    <div class="col resume-contents">
+                        side bar
                         <h1>Resume Builder</h1>
 
                     </div>
