@@ -17,10 +17,15 @@
     /* gap: 60px; */
 }
 
-/* .h2 {
+ .h2 {
     color: var(--primary, #455487);
     font-family: Manrope;
-} */
+}
+
+p {
+    color: var(--primary, #455487);
+    font-family: Manrope;
+}
 
 .resume-content {
     display: flex;
@@ -43,22 +48,10 @@ input {
     padding: 10px 15px;
     margin-bottom: 15px;
     font-size: 14px;
-}
-
-#finish-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    padding: 12px 30px;
-    border-radius: 10px;
-    background: var(--primary, #455487);
-    color: var(--background-secondary, #FAFAFA);
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+  }
+  .resume-section {
+    background-color:beige;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }

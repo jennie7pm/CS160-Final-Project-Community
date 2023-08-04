@@ -9,6 +9,17 @@
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
 }
 
+.nav-right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+
+.nav-link {
+    margin-right: 20px; 
+    padding-left: 60px; 
+}
 
 
 
