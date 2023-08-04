@@ -1,0 +1,18 @@
+/* .resume-builder{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0px 100px;
+    align-items: center;
+    gap: 60px;
+}
