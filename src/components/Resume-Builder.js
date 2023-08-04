@@ -2,16 +2,15 @@ import "./Resume-Builder.css"
 
 export function ResumeBuilder() {
     return (
-        // <p>test resume builder</p>
         <div className="resume-builder">
             <div class="container">
                 <div class="row">
-                    <div class="col resume-contents">
+                    <div class="col">header</div>
+                    <div class="w-100"></div>
+                    <div class="col-4 resume-contents">
                         side bar
-                        <h1>Resume Builder</h1>
-
                     </div>
-                    <div class="col">
+                    <div class="col-8">
                         <form>
                             <p>Profile</p>
                             <label>
@@ -244,7 +243,7 @@ export function ResumeBuilder() {
                             </label>
                             <br></br>
 
-                            <input type="submit" value="Finish" />
+                            <input type="submit" value="Finish" id="finish-button" />
                         </form>
                     </div>
                 </div>
