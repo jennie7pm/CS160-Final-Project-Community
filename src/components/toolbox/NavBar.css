@@ -9,6 +9,17 @@
     box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
 }
 
+.nav-right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This will push items to the right */
+}
+
+
+.nav-link {
+    margin-right: 20px; /* Add some right margin between the items for spacing */
+    padding-left: 60px; /* Add padding between community, resume builder, and resources */
+}
 
 
 
