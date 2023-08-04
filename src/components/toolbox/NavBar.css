@@ -12,13 +12,13 @@
 .nav-right-container {
     display: flex;
     align-items: center;
-    margin-left: auto; /* This will push items to the right */
+    margin-left: auto; 
 }
 
 
 .nav-link {
-    margin-right: 20px; /* Add some right margin between the items for spacing */
-    padding-left: 60px; /* Add padding between community, resume builder, and resources */
+    margin-right: 20px; 
+    padding-left: 60px; 
 }
 
 

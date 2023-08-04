@@ -22,6 +22,11 @@
     font-family: Manrope;
 }
 
+p {
+    color: var(--primary, #455487);
+    font-family: Manrope;
+}
+
 .resume-content {
     display: flex;
     width: 945px;
@@ -43,4 +48,10 @@ input {
     padding: 10px 15px;
     margin-bottom: 15px;
     font-size: 14px;
+  }
+  .resume-section {
+    background-color:beige;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
   }
