@@ -4,7 +4,21 @@ import React, { useState } from 'react';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
 export function ResumeBuilder() {
+
     const [showPDF, setShowPDF] = useState(false);
+
+    // State to store user input data
+    const [userData, setUserData] = useState({
+        name: '',
+        email: '',
+        // Add other fields as needed...
+    });
+
+    // Function to handle input change and update user data state
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [name]: value }));
+    };
 
     // Function to handle the "Finish" button click
     const handleFinishClick = (event) => {
@@ -18,7 +32,7 @@ export function ResumeBuilder() {
         <div className="resume-builder">
             {showPDF ? (
                 <div>
-                    <MyDocument />
+                    <MyDocument userData={userData}/>
                 </div>
             ) : (
                 <div class="container">
@@ -34,7 +48,7 @@ export function ResumeBuilder() {
                                     <p>Profile</p>
                                     <label>
                                         Name:
-                                        <input type="text" placeholder="Chrisdeep" />
+                                        <input type="text" name="name" placeholder="Chrisdeep" onChange={handleInputChange}/>
                                     </label>
                                     <br></br>
                                     <label>

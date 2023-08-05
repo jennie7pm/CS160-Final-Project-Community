@@ -15,14 +15,15 @@ const styles = StyleSheet.create({
 });
 
 // Create Document Component
-const MyDocument = () => (
+const MyDocument = ({userData}) => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
+        <Text>Name: {userData.name}</Text>
+        <br></br>
+        <Text>Email: {userData.email}</Text>
+        <br></br>
+        <Text>GitHub accout: {userData.github}</Text>
       </View>
     </Page>
   </Document>
