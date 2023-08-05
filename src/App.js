@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Communities } from "./components/communities/Communities";
 import { Resources } from "./components/reousrces/Resources";
 import { ResumeBuilder } from "./components/resume-builder/Resume-Builder";
+// import { Sidebar } from "./components/resume-builder/Resume-Builder";
 import { Join } from "./components/log-join/Join";
 import { LogIn } from "./components/log-join/Log-In";
 import { Home } from "./components/Homes/Home";

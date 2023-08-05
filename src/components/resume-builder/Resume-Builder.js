@@ -1,19 +1,21 @@
 import { NavBar } from "../toolbox/nav-bar/NavBar";
 import { SideMenu } from "../toolbox/sideMenu/SideMenu.js";
 import "./Resume-Builder.css"
-import plusIcon from './toolbox/images/add.png'; 
+import plusIcon from '../toolbox/images/add.png';
 import MyDocument from "./generate-pdf"
 import React, { useState } from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+// import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
-export function ResumeBuilder(){
+// function Sidebar() {
+//     let sideMenuRowArr = [['Profile', null], ['Education', null], ['Work Experience', null], ['Project', null], ['Tool', null], ['Award', null], ['LeaderShip', null], ['Finish', null]];
+//     return (<><NavBar navButtonSelection="resumeBuilder" />
+//         <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} />
+//     </>);
+// }
+
+
+function ResumeBuilder() {
     let sideMenuRowArr = [['Profile', null], ['Education', null], ['Work Experience', null], ['Project', null], ['Tool', null], ['Award', null], ['LeaderShip', null], ['Finish', null]];
-    return (<><NavBar navButtonSelection="resumeBuilder"/>
-            <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr}/>    
-            </>);
-}
-
-export function ResumeBuilder() {
 
     const [showPDF, setShowPDF] = useState(false);
 
@@ -38,11 +40,13 @@ export function ResumeBuilder() {
     };
 
 
-    return (
+    return (<>
+        <NavBar navButtonSelection="resumeBuilder" />
+        <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} />
         <div className="resume-builder">
             {showPDF ? (
                 <div>
-                    <MyDocument userData={userData}/>
+                    <MyDocument userData={userData} />
                 </div>
             ) : (
                 <div class="container">
@@ -55,11 +59,11 @@ export function ResumeBuilder() {
                         <div class="col-8">
                             <form>
                                 <p> Profile </p>
-                                    <div className="resume-section">
-                                
+                                <div className="resume-section">
+
                                     <label>
                                         Name:
-                                        <input type="text" name="name" placeholder="Chrisdeep" onChange={handleInputChange}/>
+                                        <input type="text" name="name" placeholder="Chrisdeep" onChange={handleInputChange} />
                                     </label>
                                     <br></br>
                                     <label>
@@ -156,8 +160,8 @@ export function ResumeBuilder() {
                                 </div>
 
 
-        
-                                {/* <div className="resume-section">
+
+                                { /*<div className="resume-section">
                                     <p>Experience 2</p>
                                     <label>
                                         Position:
@@ -243,7 +247,7 @@ export function ResumeBuilder() {
                                         Responsibility or Achievement 3:
                                         <input type="text" placeholder="Assisted in the creation and execution of automated test scripts, achieving a 40% reduction in manual testing time. Contributed to continuous integration (CI) and continuous deployment (CD) processes, enhancing the efficiency of development cycles and ensuring the reliability of software releases." />
                                     </label>
-                                </div> */}
+            </div> */}
 
                                 <br></br>
 
@@ -275,7 +279,7 @@ export function ResumeBuilder() {
                                         <input type="text" placeholder="Python" />
                                     </label>
                                     <br></br>
-                                    {/* <label>
+                                    { /*<label>
                                         Language 2:
                                         <input type="text" placeholder="Java" />
                                     </label>
@@ -298,10 +302,10 @@ export function ResumeBuilder() {
                                     <label>
                                         Language 6:
                                         <input type="text" placeholder="JavaScript" />
-                                    </label> */}
+        </label> */}
                                 </div>
                                 <br></br>
-                                
+
                                 <p>Tools</p>
                                 <div className="resume-section">
                                     <h4>Tool 1</h4>
@@ -309,7 +313,7 @@ export function ResumeBuilder() {
                                         Tool:
                                         <input type="text" placeholder="GitHub" />
                                     </label>
-                                    {/* <br></br>
+                                    { /*<br></br>
                                     <label>
                                         Tool 2:
                                         <input type="text" placeholder="SwiftUI" />
@@ -318,7 +322,7 @@ export function ResumeBuilder() {
                                     <label>
                                         Tool 3:
                                         <input type="text" placeholder="Figma" />
-                                    </label> */}
+    </label> */}
                                 </div>
 
                                 <br></br>
@@ -331,5 +335,9 @@ export function ResumeBuilder() {
                 </div>
             )}
         </div>
+    </>
     )
 }
+
+
+export { ResumeBuilder }
