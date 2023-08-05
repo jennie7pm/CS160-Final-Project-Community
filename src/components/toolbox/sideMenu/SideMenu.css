@@ -1,6 +1,6 @@
 .side-menu-cotainer{
     display: flex;
-    width: 25vw;
+    width: 20vw;
     padding: 50px 60px;
     flex-direction: column;
     align-items: flex-start;
