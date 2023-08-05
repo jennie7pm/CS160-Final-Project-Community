@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2b84191f2c5efbea8e38c87c65b04e1c244db4c0
 import { NavBar } from "../toolbox/nav-bar/NavBar.js";
 import { SideMenu } from "../toolbox/sideMenu/SideMenu.js";
 import DataAlgoIcon from "./images/Data-Algo.png";
@@ -16,4 +20,9 @@ export function Resources(){
                 <ResourcesBody/>
             </div>
             </>)
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 2b84191f2c5efbea8e38c87c65b04e1c244db4c0
