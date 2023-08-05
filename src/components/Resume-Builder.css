@@ -8,14 +8,17 @@
 } */
 
 .container {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
     box-sizing: border-box;
     width: 100vw;
     padding: 0px 100px;
     align-items: center;
     gap: 60px;
     background: var(--background, #EEE);
+    /* padding: 0px 100px; */
+    /* align-items: center; */
+    /* gap: 60px; */
 }
 
 /* .h2 {
@@ -26,9 +29,9 @@
 
 .resume-content {
     display: flex;
-    width: 945px;
-    padding: 60px 120px;
-    flex-direction: column;
+    /* width: 945px;
+    padding: 60px 120px; */
+    /* flex-direction: column; */
     align-items: flex-start;
     gap: 45px;
 }
