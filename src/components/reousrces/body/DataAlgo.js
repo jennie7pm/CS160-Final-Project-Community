@@ -1,6 +1,9 @@
-import "../Resources.css";
+import "./DataAlgo.css";
+import React, { useState } from "react";
+
 import Tool from "../Tool";
 import DataAlgoIcon from "../images/icons/dataalgo.png";
+import LinkIcon from "../images/icons/link arrow.png";
 
 import LeetCodeLogo from "../images/logos/leetcode.png";
 import HackerRankLogo from "../images/logos/hackerrank.png";
@@ -8,6 +11,33 @@ import TopCoderLogo from "../images/logos/topcoder.png";
 import GeeksforGeeksLogo from "../images/logos/geeksforgeeks.png";
 import CodilityLogo from "../images/logos/codility.png";
 import AlgoExpertLogo from "../images/logos/algoexpert.png";
+
+function Collapsible({ title, children }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <button className="collapsible" onClick={() => setIsOpen(!isOpen)}>
+      {title} {isOpen && <div>{children}</div>}
+    </button>
+  );
+}
+
+function Resources({ resources, links }) {
+  return (
+    <div className="link-container">
+      {resources.map((res, index) => (
+        <button
+          className="link-button"
+          key={index}
+          onClick={() => window.open(links[index])}
+        >
+          <p>{res}</p>
+          <img className="small-icon" src={LinkIcon}></img>
+        </button>
+      ))}
+    </div>
+  );
+}
 
 export function DataAlgo() {
   return (
@@ -60,6 +90,11 @@ export function DataAlgo() {
       <div className="section">
         <div className="section-header">
           <h2>Resources</h2>
+        </div>
+        <div className="resources-container">
+          <Collapsible title="Header">
+            <Resources resources={["test"]} links={["www.google.com"]} />
+          </Collapsible>
         </div>
       </div>
     </div>
