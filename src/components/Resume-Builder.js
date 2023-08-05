@@ -1,4 +1,5 @@
 import "./Resume-Builder.css"
+import plusIcon from './toolbox/images/add.png'; 
 import MyDocument from "./generate-pdf"
 import React, { useState } from 'react';
 import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
@@ -44,8 +45,9 @@ export function ResumeBuilder() {
                         </div>
                         <div class="col-8">
                             <form>
-                                <div className="resume-section">
-                                    <p>Profile</p>
+                                <p> Profile </p>
+                                    <div className="resume-section">
+                                
                                     <label>
                                         Name:
                                         <input type="text" name="name" placeholder="Chrisdeep" onChange={handleInputChange}/>
@@ -63,8 +65,9 @@ export function ResumeBuilder() {
                                 </div>
                                 <br></br>
 
+                                <p>Education</p>
                                 <div className="resume-section">
-                                    <p>Education</p>
+                                    <h4>Education 1</h4>
                                     <label>
                                         Degree:
                                         <input type="text" placeholder="Bachelor of Science (B.S.) in Computer Science" />
@@ -92,8 +95,9 @@ export function ResumeBuilder() {
                                 </div>
                                 <br></br>
 
+                                <p>Experiences</p>
                                 <div className="resume-section">
-                                    <p>Experience 1</p>
+                                    <h4>Experience 1</h4>
                                     <label>
                                         Position:
                                         <input type="text" placeholder="Software Engineering Intern" />
@@ -135,9 +139,16 @@ export function ResumeBuilder() {
                                     </label>
                                 </div>
 
-                                <br></br>
+                                <div className="add">
+                                    <a href="#">
+                                        <img src={plusIcon} className="plus-icon" />
+                                        Add Experience
+                                    </a>
+                                </div>
 
-                                <div className="resume-section">
+
+        
+                                {/* <div className="resume-section">
                                     <p>Experience 2</p>
                                     <label>
                                         Position:
@@ -223,12 +234,13 @@ export function ResumeBuilder() {
                                         Responsibility or Achievement 3:
                                         <input type="text" placeholder="Assisted in the creation and execution of automated test scripts, achieving a 40% reduction in manual testing time. Contributed to continuous integration (CI) and continuous deployment (CD) processes, enhancing the efficiency of development cycles and ensuring the reliability of software releases." />
                                     </label>
-                                </div>
+                                </div> */}
 
                                 <br></br>
 
+                                <p>Projects</p>
                                 <div className="resume-section">
-                                    <p>Projects</p>
+                                    <h4>Project 1</h4>
                                     <label>
                                         Title:
                                         <input type="text" placeholder="SmartHealth Tracker" />
@@ -244,15 +256,17 @@ export function ResumeBuilder() {
                                         <input type="text" placeholder="Implemented a personalized recommendation engine using machine learning algorithms that provided customized fitness and nutrition plans, and designed interactive features that led to a 30% increase in daily active users within three months." />
                                     </label>
                                 </div>
+                                <br></br>
 
+                                <p>Languages</p>
                                 <div className="resume-section">
-                                    <p>Languages</p>
+                                    <h4>Language 1</h4>
                                     <label>
-                                        Language 1:
+                                        Language:
                                         <input type="text" placeholder="Python" />
                                     </label>
                                     <br></br>
-                                    <label>
+                                    {/* <label>
                                         Language 2:
                                         <input type="text" placeholder="Java" />
                                     </label>
@@ -275,17 +289,18 @@ export function ResumeBuilder() {
                                     <label>
                                         Language 6:
                                         <input type="text" placeholder="JavaScript" />
-                                    </label>
+                                    </label> */}
                                 </div>
                                 <br></br>
-
+                                
+                                <p>Tools</p>
                                 <div className="resume-section">
-                                    <p>Tools</p>
+                                    <h4>Tool 1</h4>
                                     <label>
-                                        Tool 1:
+                                        Tool:
                                         <input type="text" placeholder="GitHub" />
                                     </label>
-                                    <br></br>
+                                    {/* <br></br>
                                     <label>
                                         Tool 2:
                                         <input type="text" placeholder="SwiftUI" />
@@ -294,7 +309,7 @@ export function ResumeBuilder() {
                                     <label>
                                         Tool 3:
                                         <input type="text" placeholder="Figma" />
-                                    </label>
+                                    </label> */}
                                 </div>
 
                                 <br></br>
