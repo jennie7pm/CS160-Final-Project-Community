@@ -1,4 +1,5 @@
 import "./Resources.css";
+import Tool from "./Tool";
 import LinkIcon from "./images/icons/link arrow.png";
 import InternshipSearchIcon from "./images/icons/internshipsearch.png";
 import LinkedInLogo from "./images/logos/linkedin.png";
@@ -8,9 +9,8 @@ import HandshakeLogo from "./images/logos/handshake.png";
 import OttaLogo from "./images/logos/otta.png";
 import ZiprecruiterLogo from "./images/logos/ziprecruiter.png";
 import GoldmanSachsLogo from "./images/logos/goldmansachs.png";
-import { useCallback } from "react";
 
-function OpenPosition({ company, location, position }) {
+function OpenPosition({ company, location, position, links }) {
   return (
     <div className="position-card">
       <div className="company-container">
@@ -24,7 +24,11 @@ function OpenPosition({ company, location, position }) {
       </div>
       <div className="link-container">
         {position.map((pos, index) => (
-          <button className="link-button" key={index}>
+          <button
+            className="link-button"
+            key={index}
+            onClick={() => window.open(links[index])}
+          >
             <p>{pos}</p>
             <img className="small-icon" src={LinkIcon}></img>
           </button>
@@ -35,30 +39,6 @@ function OpenPosition({ company, location, position }) {
 }
 
 export function InternshipSearch() {
-  const openLinkedIn = useCallback(() => {
-    window.open("https://linkedin.com/");
-  }, []);
-
-  const openGlassdoor = useCallback(() => {
-    window.open("https://www.glassdoor.com/");
-  }, []);
-
-  const openIndeed = useCallback(() => {
-    window.open("https://www.indeed.com/");
-  }, []);
-
-  const openHandshake = useCallback(() => {
-    window.open("https://joinhandshake.com/");
-  }, []);
-
-  const openOtta = useCallback(() => {
-    window.open("https://otta.com/");
-  }, []);
-
-  const openZiprecruiter = useCallback(() => {
-    window.open("https://www.ziprecruiter.com/");
-  }, []);
-
   return (
     <div className="body">
       <div className="sidebar"></div>
@@ -76,46 +56,32 @@ export function InternshipSearch() {
             <h2>Tools</h2>
           </div>
           <div className="tool-container">
-            <button className="tool-card" onClick={openLinkedIn}>
-              <img
-                className="icon"
-                alt="LinkedIn logo"
-                src={LinkedInLogo}
-              ></img>
-              <p>LinkedIn</p>
-            </button>
-            <button className="tool-card" onClick={openGlassdoor}>
-              <img
-                className="icon"
-                alt="Glassdoor logo"
-                src={GlassdoorLogo}
-              ></img>
-              <p>Glassdoor</p>
-            </button>
-            <button className="tool-card" onClick={openIndeed}>
-              <img className="icon" alt="Indeed logo" src={IndeedLogo}></img>
-              <p>Indeed</p>
-            </button>
-            <button className="tool-card" onClick={openHandshake}>
-              <img
-                className="icon"
-                alt="Handshake logo"
-                src={HandshakeLogo}
-              ></img>
-              <p>Handshake</p>
-            </button>
-            <button className="tool-card" onClick={openOtta}>
-              <img className="icon" alt="Otta logo" src={OttaLogo}></img>
-              <p>Otta</p>
-            </button>
-            <button className="tool-card" onClick={openZiprecruiter}>
-              <img
-                className="icon"
-                alt="Ziprecruiter logo"
-                src={ZiprecruiterLogo}
-              ></img>
-              <p>ZipRecruiter</p>
-            </button>
+            <Tool
+              name={"LinkedIn"}
+              logo={LinkedInLogo}
+              link={"https://linkedin.com/"}
+            />
+            <Tool
+              name={"Glassdoor"}
+              logo={GlassdoorLogo}
+              link={"https://www.glassdoor.com/"}
+            />
+            <Tool
+              name={"Indeed"}
+              logo={IndeedLogo}
+              link={"https://www.indeed.com/"}
+            />
+            <Tool
+              name={"Handshake"}
+              logo={HandshakeLogo}
+              link={"https://joinhandshake.com/"}
+            />
+            <Tool name={"Otta"} logo={OttaLogo} link={"https://otta.com/"} />
+            <Tool
+              name={"Ziprecruiter"}
+              logo={ZiprecruiterLogo}
+              link={"https://www.ziprecruiter.com/"}
+            />
           </div>
         </div>
         <div className="section">
