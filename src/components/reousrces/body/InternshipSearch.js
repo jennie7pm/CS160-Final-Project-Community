@@ -1,4 +1,4 @@
-import "../Resources.css";
+import "./InternshipSearch.css";
 import Tool from "../Tool";
 import LinkIcon from "../images/icons/link arrow.png";
 import InternshipSearchIcon from "../images/icons/internshipsearch.png";
