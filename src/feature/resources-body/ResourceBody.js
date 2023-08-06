@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import { DataAlgo } from '../../components/reousrces/body/DataAlgo';
-import { InternshipSearch } from '../../components/reousrces/body/InternshipSearch';
-import { SampleResumes } from '../../components/reousrces/body/SampleResumes';
+import { DataAlgo } from '../../components/resources/body/DataAlgo';
+import { InternshipSearch } from '../../components/resources/body/InternshipSearch';
+import { SampleResumes } from '../../components/resources/body/SampleResumes';
 
 export function ResourcesBody(){
   const currentContent = useSelector((state) => state.resourceBody.currentContent);
