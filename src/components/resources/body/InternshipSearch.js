@@ -180,4 +180,4 @@ export function InternshipSearch() {
     </div>
   );
 }
-export default InternshipSearch;
+
