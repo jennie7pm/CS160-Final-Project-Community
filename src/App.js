@@ -13,8 +13,16 @@ import { store } from "./redux/store";
 import { Provider } from "react-redux";
 
 function App() {
+  /* TODO: fix the hard code later! */
+  const userToken =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Y2NhNjU1OWRiMTEwOGU1YTU3YTkyMSIsImlhdCI6MTY5MTEzNzQzN30.445NHeX9-0qHYKQTRLEhVmOn2YIPtfJgGGGegnnF3zM";
+  const userId = "64cca6559db1108e5a57a921";
   return (
     <Provider store={store}>
+      {localStorage.setItem("loggedIn", true)}
+      {localStorage.setItem("userToken", userToken)}
+      {localStorage.setItem("userId", userId)}
+      {localStorage.setItem("userPicturePath", "Profile.png")}
       <Router>
         <Routes>
           <Route path="/communities" element={<Communities />} />
