@@ -1,5 +1,5 @@
 import CareerExperienceIcon from "../images/Career-Exprience.png";
-import { BodyHeader } from "../../toolbox/header /BodyHeader.js";
+import { BodyHeader } from "../../toolbox/header/BodyHeader.js";
 import { CreatePost } from "./CreatePost";
 import { Post } from "./Post";
 export function CareerExperience(){

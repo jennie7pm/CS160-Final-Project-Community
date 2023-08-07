@@ -1,5 +1,5 @@
 import ProjectCollabIcon from "../images/Project-Collab.png";
-import { BodyHeader } from "../../toolbox/header /BodyHeader.js";
+import { BodyHeader } from "../../toolbox/header/BodyHeader.js";
 import { CreatePost } from "./CreatePost";
 
 export function ProjectCollab(){

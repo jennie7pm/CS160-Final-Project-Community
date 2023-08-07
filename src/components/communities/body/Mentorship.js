@@ -1,5 +1,5 @@
 import MentorshipIcon from "../images/Mentorship.png";
-import { BodyHeader } from "../../toolbox/header /BodyHeader.js";
+import { BodyHeader } from "../../toolbox/header/BodyHeader.js";
 import { CreatePost } from "./CreatePost";
 
 export function Mentorship(){
