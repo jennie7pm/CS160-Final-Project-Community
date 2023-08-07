@@ -14,6 +14,7 @@ import TopCoderLogo from "../images/logos/topcoder.png";
 import GeeksforGeeksLogo from "../images/logos/geeksforgeeks.png";
 import CodilityLogo from "../images/logos/codility.png";
 import AlgoExpertLogo from "../images/logos/algoexpert.png";
+import { BodyHeader } from "../../toolbox/header/BodyHeader";
 
 function Collapsible({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,46 +97,42 @@ const tools = [
 ];
 
 export function DataAlgo() {
+  let titleArr = [DataAlgoIcon, "Data Structures and Algorithms", ""];
   return (
-    <div className="content">
-      <div className="title">
-        <img
-          className="title-icon"
-          src={DataAlgoIcon}
-          alt="Data Structures and Algorithms"
-        ></img>
-        <h1>Data Structures and Algorithms</h1>
-      </div>
-      <div className="section">
-        <div className="section-header">
-          <h2>Practice Tools</h2>
+    <>
+      <BodyHeader titleArr={titleArr} />
+      <div className="content">
+        <div className="section">
+          <div className="section-header">
+            <h2>Practice Tools</h2>
+          </div>
+          <div className="tool-container">
+            {tools.map((tool) => (
+              <Tool
+                name={tool.name}
+                logo={tool.logo}
+                link={tool.link}
+                key={tool.name}
+              />
+            ))}
+          </div>
         </div>
-        <div className="tool-container">
-          {tools.map((tool) => (
-            <Tool
-              name={tool.name}
-              logo={tool.logo}
-              link={tool.link}
-              key={tool.name}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="section">
-        <div className="section-header">
-          <h2>Resources</h2>
-        </div>
-        <div className="resources-container">
-          {ResourcesCollection.map((topic, index) => (
-            <Collapsible
-              title={topic.title}
-              content={topic.content}
-              key={index}
-            />
-          ))}
+        <div className="section">
+          <div className="section-header">
+            <h2>Resources</h2>
+          </div>
+          <div className="resources-container">
+            {ResourcesCollection.map((topic, index) => (
+              <Collapsible
+                title={topic.title}
+                content={topic.content}
+                key={index}
+              />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export default DataAlgo;

@@ -30,3 +30,18 @@
     font-weight: 400;
     line-height: normal;
 }
+
+@media screen and (max-width: 1055px){
+    .logo-container img{
+        width: 32px;
+        height: 32px;
+    }
+    .logo-container h2{
+        font-size: 24px !important;
+    }
+    .bodyheader-container p{
+        margin-top: 6px;
+        font-size: 15px;
+    }
+    
+}
