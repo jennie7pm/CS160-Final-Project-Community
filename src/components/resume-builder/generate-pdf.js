@@ -27,20 +27,20 @@ const MyDocument = ({ userData }) => (
                 <br></br>
                 <Text>Email: {userData.email}</Text>
                 <br></br>
-                <Text>GitHub accout: {userData.github}</Text>
+                <Text>GitHub accout: {userData.githubaccount}</Text>
                 <br></br>
 
                 <Text>EDUCATION</Text>
                 <br></br>
-                <Text>Degree: {userData.Degree}</Text>
+                <Text>Degree: {userData.degree}</Text>
                 <br></br>
-                <Text>institution: {userData.institution}</Text>
+                <Text>institution: {userData.uni}</Text>
                 <br></br>
-                <Text>GPA: {userData.GPA}</Text>
+                <Text>GPA: {userData.gpa}</Text>
                 <br></br>
-                <Text>graduation date: {userData.graduationdate}</Text>
+                <Text>graduation date: {userData.egd}</Text>
                 <br></br>
-                <Text>course: {userData.course}</Text>
+                <Text>course: {userData.work}</Text>
                 <br></br>
 
                 <Text>EXPERIENCES</Text>
@@ -49,9 +49,9 @@ const MyDocument = ({ userData }) => (
                 <br></br>
                 <Text>company: {userData.company}</Text>
                 <br></br>
-                <Text>city: {userData.city}</Text>
+                <Text>city: {userData.location}</Text>
                 <br></br>
-                <Text>enddate: {userData.startdate}</Text>
+                <Text>startdate: {userData.startdate}</Text>
                 <br></br>
                 <Text>enddate: {userData.enddate}</Text>
                 <br></br>
@@ -64,20 +64,21 @@ const MyDocument = ({ userData }) => (
 
                 <Text>PROJECTS</Text>
                 <br></br>
-                <Text>title: {userData.title}</Text>
+                <Text>projectname: {userData.projectname}</Text>
                 <br></br>
-                <Text>contribution1: {userData.contribution1}</Text>
+                <Text>contribution1: {userData.cont}</Text>
                 <br></br>
-                <Text>contribution2: {userData.contribution2}</Text>
+                <Text>contribution2: {userData.cont}</Text>
                 <br></br>
                 
-                <Text>LANGUAGES</Text>
+                <Text>LANGUAGES: </Text>
                 <br></br>
-                <Text>{userData.language1}</Text>
+                <Text>{userData.lang}</Text>
+                <br></br>
 
-                <Text>TOOLS</Text>
+                <Text>TOOLS: </Text>
                 <br></br>
-                <Text> {userData.tool1}</Text>
+                <Text> {userData.tool}</Text>
 
             </View>
         </Page>

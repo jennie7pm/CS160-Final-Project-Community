@@ -2,7 +2,7 @@ import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Communities } from "./components/communities/Communities";
-import { Resources } from "./components/reousrces/Resources";
+import { Resources } from "./components/resources/Resources";
 import { ResumeBuilder } from "./components/resume-builder/Resume-Builder";
 // import { Sidebar } from "./components/resume-builder/Resume-Builder";
 import { Join } from "./components/log-join/Join";

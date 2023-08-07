@@ -23,12 +23,12 @@ function ResumeBuilder() {
     const [userData, setUserData] = useState({
         name: '',
         email: '',
-        github: '',
+        githubaccount: '',
         Degree: '',
         institution: '',
-        GPA: '',
-        graduationdate: '',
-        course: '',
+        gpa: '',
+        egd: '',
+        work: '',
         position: '',
         company: '',
         city: '',
@@ -37,8 +37,8 @@ function ResumeBuilder() {
         responsibility1: '',
         responsibility2: '',
         responsibility3: '',
-        title: '',
-        contribution1: '',
+        projectname: '',
+        cont: '',
         contribution2: '',
         language1: '',
         tool1: '',
@@ -51,24 +51,24 @@ function ResumeBuilder() {
         setUserData((prevData) => ({ ...prevData, [name]: value }));
         const { email, email_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: email_value }));
-        const { github, github_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: github_value }));
-        const { Degree, Degree_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: Degree_value }));
-        const { institution, institution_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: institution_value }));
-        const { GPA, GPA_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: GPA_value }));
-        const { graduationdate, graduationdate_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: graduationdate_value }));
-        const { course, course_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: course_value }));
+        const { githubaccount, github_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [githubaccount]: github_value }));
+        const { degree, degree_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [degree]: degree_value }));
+        const { uni, institution_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [uni]: institution_value }));
+        const { gpa, GPA_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [gpa]: GPA_value }));
+        const { egd, graduationdate_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [egd]: graduationdate_value }));
+        const { work, course_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [work]: course_value }));
         const { position, position_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: position_value }));
         const { company, company_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: company_value }));
-        const { city, city_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: city_value }));
+        const { location, city_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [location]: city_value }));
         const { startdate, startdate_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: startdate_value }));
         const { enddate, enddate_value } = event.target;
@@ -79,10 +79,10 @@ function ResumeBuilder() {
         setUserData((prevData) => ({ ...prevData, [email]: responsibility2_value }));
         const { responsibility3, responsibility3_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: responsibility3_value }));
-        const { title, title_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: title_value }));
-        const { contribution1, contribution1_value } = event.target;
-        setUserData((prevData) => ({ ...prevData, [email]: contribution1_value }));
+        const { projectname, title_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [projectname]: title_value }));
+        const { cont, contribution1_value } = event.target;
+        setUserData((prevData) => ({ ...prevData, [cont]: contribution1_value }));
         const { contribution2, contribution2_value } = event.target;
         setUserData((prevData) => ({ ...prevData, [email]: contribution2_value }));
         const { language1, language1_value } = event.target;
@@ -97,75 +97,100 @@ function ResumeBuilder() {
         console.log('clicked!');
         setShowPDF(true);
     };
-    
-    
+
+
     // State to store resume sections
     const [resumeSections, setResumeSections] = useState([
         {
         title: 'Profile',
-        inputs: [{ label: 'Name', placeholder: 'Chrisdeep', name: 'name' }],
+        inputs: [
+            { label: 'Name', placeholder: 'Chrisdeep', name: 'name' },
+            { label: "Email", placeholder: "chrissdeep@gmail.com", name: 'email'},
+            { label: 'GitHub Account', placeholder: 'chrissdeep_', name:'githubaccount'}
+        ],
         },
-    ]);
-      
-        // Function to add a new section
-    const addSection = (sectionType) => {
-        let newSection;
-        switch (sectionType) {
-        case 'Experience':
-            newSection = {
-            title: 'Experience',
-            inputs: [
-                { label: 'Position', placeholder: 'Software Engineering Intern', name: 'position' },
-                { label: 'Company', placeholder: 'Google', name: 'company' },
-                // Add other input fields for experience
-            ],
-            };
-            break;
-        case 'Project':
-            newSection = {
-            title: 'Project',
-            inputs: [
-                { label: 'Title', placeholder: 'SmartHealth Tracker', name: 'title' },
-                { label: 'Contribution 1', placeholder: 'Developed mobile and web applications...', name: 'contribution1' },
-                // Add other input fields for projects
-            ],
-            };
-            break;
-        case 'Language':
-            newSection = {
-            title: 'Language',
-            inputs: [
-                { label: 'Language', placeholder: 'Python', name: 'language' },
-                // Add other input fields for languages
-            ],
-            };
-            break;
-        case 'Tool':
-            newSection = {
-            title: 'Tool',
-            inputs: [
-                { label: 'Tool', placeholder: 'GitHub', name: 'tool' },
-                // Add other input fields for tools
-            ],
-            };
-            break;
-        default:
-            return;
-        }
-        setResumeSections((prevSections) => [...prevSections, newSection]);
-    };
+        {
+        title: 'Education',
+        inputs: [
+            { label: 'Degree', placeholder: 'B.S. Computer Science', name: 'degree' },
+            { label: "Institution", placeholder: "React University", name: 'uni'},
+            { label: 'GPA', placeholder: '3.8', name:'gpa'},
+            { label: 'Expected Graduation Data', placeholder: 'May 2024', name:'egd'},
+            { label: 'Relevant Coursework', placeholder: 'CS61A, CS61B', name:'work'}
+        ],
+        },
+        {
+        title: 'Experiences',
+        subtitle: 'Experience',
+        count: 1,
+        inputs: [
+            { label: 'Position', placeholder: 'Software Engineer', name: 'position' },
+            { label: "Company", placeholder: "Google", name: 'company'},
+            { label: 'Location', placeholder: 'Sunnyvale, CA', name:'location'},
+            { label: 'Start Date', placeholder: 'May 2023', name:'startdate'},
+            { label: 'End Date', placeholder: 'August 2023', name:'enddate'},
+            { label: 'Responsibility or Achievement 1', name:'responsibility1', placeholder: "Collaborated with the product development team to design, code, and implement new features in the company's main application, enhancing usability and performance. Utilized programming languages such as Python and Java, following Agile methodologies."},
+            { label: 'Responsibility or Achievement 2', name:'responsibility2', placeholder: "Identified and fixed critical bugs in existing software, leading to a 25% reduction in customer-reported issues. Conducted code reviews and refactoring sessions to improve overall code quality and maintainability, contributing to best practices within the development team."},
+            {label :'Responsibility or Achievement 2', name:'responsibility3', placeholder: "Assisted in the creation and execution of automated test scripts, achieving a 40% reduction in manual testing time. Contributed to continuous integration (CI) and continuous deployment (CD) processes, enhancing the efficiency of development cycles and ensuring the reliability of software releases."}
+        ],
+        },
+        {
+        title: 'Project',
+        inputs: [
+            { label: 'Title', placeholder: 'SmartHealth Tracker', name: 'projectname' },
+            { label: "Contribution 1", placeholder: "Developed mobile and web applications using React Native and React.js, and integrated real-time health data from multiple wearable devices using APIs.", name: 'cont'},
+            { label: 'Contribution 2', placeholder: 'Implemented a personalized recommendation engine using machine learning algorithms that provided customized fitness and nutrition plans, and designed interactive features that led to a 30% increase in daily active users within three months.', name:'cont'}
+            
+        ],
+        },
+        {
+        title: 'Languages',
+        inputs: [
+            { label: 'Language', placeholder: 'Python', name: 'lang' }
+        ],
+        },
+        {
+        title: 'Tools',
+        inputs: [
+            { label: 'Tool', placeholder: 'Github', name: 'tool' }
+        ],
+        },
+    ])
     
+    // Function to add a new resume section
+    const addResumeSection = (title) => {
+        setResumeSections((prevSections) => [
+        ...prevSections,
+        {
+            title: title,
+            inputs: [{ label: '', placeholder: '', name: '' }], // Add initial input fields for the new section
+        },
+        ]);
+    };
+
+
     // Function to add a new input field to a resume section
-    const addInputField = (sectionIndex) => {
+// Function to add a new input field to a resume section
+    const addInputField = (sectionIndex, sectionTitle) => {
         setResumeSections((prevSections) => {
         const newSections = [...prevSections];
-        // Modify the inputs array based on section type (if needed)
-        // For example, if you want to add new contribution fields for projects
-        // newSections[sectionIndex].inputs.push({ label: `Contribution ${newSections[sectionIndex].inputs.length + 1}`, placeholder: '', name: `contribution${newSections[sectionIndex].inputs.length + 1}` });
+        const currentSection = prevSections[sectionIndex];
+    
+        // Create a new section as a copy of the section above
+        const newSection = {
+            title: sectionTitle, // Use the provided section title
+            inputs: currentSection.inputs.map((input) => ({ ...input })), // Copy the inputs from the section above
+           
+        };
+    
+        // Insert the new section after the current section
+        newSections.splice(sectionIndex + 1, 0, newSection);
+    
         return newSections;
         });
     };
-    
+  
+  
 
 
     return (<>
@@ -181,9 +206,49 @@ function ResumeBuilder() {
                     </div>
                 ) : (
                     <div class="formxc">
-                      
-                        <div class="row">
-                            {/* <div class="col-8"> */}
+                      {resumeSections.map((section, sectionIndex) => (
+                            <form key={sectionIndex}>
+                                <p>{section.title}</p>
+                                <div className="resume-section">
+                                {/* <h3>{`${section.subtitle} ${section.count}`}</h3> */}
+                                {section.inputs.map((input, inputIndex) => (
+                                    <label key={inputIndex}>
+                                    {input.label}:
+                                    <input
+                                        type="text"
+                                        placeholder={input.placeholder}
+                                        name={input.name}
+                                        onChange={handleInputChange}
+                                    />
+                                    </label>
+                                ))}
+                                </div>
+                                <br />
+                                
+                                {sectionIndex === resumeSections.length - 1 ? (
+                                <div className="add">
+                                    <a href="#" onClick={(e) =>{e.preventDefault(); addInputField(sectionIndex)}}>
+                                    <img src={plusIcon} className="plus-icon" />
+                                    Add {section.title}
+                                    </a>
+                                </div>
+                                ):(
+                                    <div className="add">
+                                    <a href="#" onClick={(e) => {e.preventDefault(); addInputField(sectionIndex, section.title)}}>
+                                      <img src={plusIcon} className="plus-icon" />
+                                      Add {resumeSections[sectionIndex].title}
+                                    </a>
+                                  </div>
+                                )}
+                                <br />
+                            </form>
+                      ))}
+                      <input onClick={handleFinishClick} type="submit" value="Finish" id="finish-button" />
+
+
+
+                         {/* <div class="row">
+                             <div class="col-8"> 
                                 <form>
                                     <p> Profile </p>
                                     <div className="resume-section">
@@ -280,12 +345,12 @@ function ResumeBuilder() {
                                     </div>
 
                                     <div className="add">
-                                        <a href="#">
-                                            <img src={plusIcon} className="plus-icon" />
-                                            Add Experience
+                                        <a href="#" onClick={() => addInputField(sectionIndex)}>
+                                        <img src={plusIcon} className="plus-icon" />
+                                        Add Experience
                                         </a>
                                     </div>
-
+ */}
 
 
                                     { /*<div className="resume-section">
@@ -376,7 +441,7 @@ function ResumeBuilder() {
                                         </label>
                 </div> */}
 
-                                    <br></br>
+                                    {/* <br></br>
 
                                     <p>Projects</p>
                                     <div className="resume-section">
@@ -411,7 +476,7 @@ function ResumeBuilder() {
                                             Language:
                                             <input type="text" name="tool1" placeholder="Python" onChange={handleInputChange}/>
                                         </label>
-                                        <br></br>
+                                        <br></br> */}
                                         { /*<label>
                                             Language 2:
                                             <input type="text" placeholder="Java" />
@@ -436,7 +501,7 @@ function ResumeBuilder() {
                                             Language 6:
                                             <input type="text" placeholder="JavaScript" />
             </label> */}
-                                    </div>
+                                    {/* </div>
                                     <div className="add">
                                         <a href="#">
                                             <img src={plusIcon} className="plus-icon" onChange={handleInputChange}/>
@@ -462,7 +527,7 @@ function ResumeBuilder() {
                                             Tool 3:
                                             <input type="text" placeholder="Figma" />
         </label> */}
-                                    </div>
+                                    {/* </div>
                                     <div className="add">
                                         <a href="#">
                                             <img src={plusIcon} className="plus-icon" />
@@ -472,11 +537,10 @@ function ResumeBuilder() {
                                     <br></br>
 
                                     <input onClick={handleFinishClick} type="submit" value="Finish" id="finish-button" />
-                                </form>
+                                </form> */}
 
                             {/* </div> */}
-                        </div>
-                    </div>
+                        </div> 
                 )}
             </div>
         </div>
@@ -486,3 +550,5 @@ function ResumeBuilder() {
 
 
 export { ResumeBuilder }
+
+
