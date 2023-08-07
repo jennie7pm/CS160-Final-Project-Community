@@ -101,7 +101,6 @@
     align-self: stretch;
     padding: 15px;
     align-items: flex-start;
-    gap: 2%;
     border-radius: 10px;
     background: var(--background-secondary, #FAFAFA);
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
@@ -117,6 +116,7 @@
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: middle;
+    text-align: left;
 }
 
 .link-button {
@@ -145,9 +145,7 @@
 
 .company-container {
     display: flex;
-    width: 30%;
     align-items: center;
-    gap: 20%;
     flex-shrink: 0;
 }
 
@@ -156,7 +154,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 25%;
 }
 
 .link-container {
@@ -164,4 +161,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+@media screen and (min-width: 900px) {
+    .position-card {
+        gap: 2%;
+    }
+    .company-container {
+        width: 30%;
+        gap: 20%;
+    }
+    
+    .location-container {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .position-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .company-container {
+        width: 100%;
+        gap: 8%
+    }
+    
+    .location-container {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 700px) {
+    .tool-card {
+        width: 48%;
+    }   
+    .tool-container {
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 700px) {
+    .tool-card {
+        width: 100%;
+    }
+    .tool-container {
+        row-gap: 15px;
+        flex-direction: column;
+    }
 }
