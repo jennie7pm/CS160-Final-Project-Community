@@ -9,9 +9,6 @@ import {ResumeBuilderBody} from "./ResumeBuilderBody.js";
 function ResumeBuilder() {
     let sideMenuRowArr = [['Profile', null], ['Education', null], ['Work Experience', null], ['Project', null], ['Tool', null], ['Award', null], ['LeaderShip', null], ['Finish', null]];
 
-    
-
-
     return (<>
         <NavBar navButtonSelection="resumeBuilder" />
         <div className="sideBar-Body-container">

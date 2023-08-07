@@ -1,5 +1,4 @@
 import { SideMenu } from "../toolbox/sideMenu/SideMenu.js";
-import "./Resume-Builder.css";
 import plusIcon from '../toolbox/images/add.png';
 import MyDocument from "./generate-pdf.js";
 import React, { useState } from 'react';
