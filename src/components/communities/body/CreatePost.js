@@ -15,7 +15,7 @@ export function CreatePost(){
     };
   
     const calculateTextareaHeight = (value) => {
-        return { height: `${value.split('\n').length * 30}px` };
+        return { height: `${value.split('\n').length * 20}px` };
     };
     
     return (

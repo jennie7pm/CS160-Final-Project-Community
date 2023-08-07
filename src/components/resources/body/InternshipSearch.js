@@ -1,5 +1,5 @@
 import "./InternshipSearch.css";
-import data from "./openinternships.json";
+import data from "./internshipscollection.json";
 
 import Tool from "../Tool";
 

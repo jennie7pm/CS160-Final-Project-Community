@@ -413,7 +413,7 @@
         "locations": [
             "Toronto, ON, Canada",
             "San Francisco, CA",
-            "Remote in USA"
+            "Remote"
         ],
         "roles": [
             {
@@ -573,7 +573,7 @@
     {
         "company": "The Block",
         "locations": [
-            "Remote in USA"
+            "Remote"
         ],
         "roles": [
             {
@@ -853,7 +853,7 @@
             "Seattle, WA",
             "San Francisco, CA",
             "New York, NY",
-            "Remote in USA"
+            "Remote"
         ],
         "roles": [
             {
@@ -1272,7 +1272,7 @@
     {
         "company": "Bank of America",
         "locations": [
-            "Multiple US Locations"
+            "Multiple locations"
         ],
         "roles": [
             {
@@ -1412,7 +1412,7 @@
     {
         "company": "Apple",
         "locations": [
-            "Multiple US Locations"
+            "Multiple locations"
         ],
         "roles": [
             {
@@ -1929,7 +1929,7 @@
             "Blacksburg, VA",
             "Austin, TX",
             "Albuquerque, NM",
-            "Remote in USA"
+            "Remote"
         ],
         "roles": [
             {
@@ -1973,7 +1973,7 @@
     {
         "company": "Wells Fargo",
         "locations": [
-            "Multiple"
+            "Multiple locations"
         ],
         "roles": [
             {
@@ -2212,7 +2212,7 @@
     {
         "company": "Crowdstrike",
         "locations": [
-            "Remote in USA"
+            "Remote"
         ],
         "roles": [
             {
@@ -2224,7 +2224,7 @@
     {
         "company": "Taboola",
         "locations": [
-            "LA"
+            "Los Angeles, CA"
         ],
         "roles": [
             {
