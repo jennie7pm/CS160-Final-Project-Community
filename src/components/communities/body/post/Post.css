@@ -2,9 +2,10 @@
     display: flex;
     width: 55vw;
     padding: 30px 30px 0px 30px;
+    margin-bottom: 20px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 25px;
     align-self: stretch;
     border-radius: 20px;
     background: var(--background-secondary, #FAFAFA);
@@ -12,11 +13,14 @@
 }
 
 .user-container{
-    display: flext;
+    display: flex;
+    height: 50px;
+    align-items: center !important;
     gap: 20px;
+
 }
 
-.user-container p{
+.user-container div{
     color: var(--grey, #606060);
     font-family: Manrope;
     font-size: 16px;

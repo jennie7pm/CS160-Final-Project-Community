@@ -1,11 +1,13 @@
 import "./Post.css";
+import ProfileIcon from "./Profile.png"
 export function Post(){
     return (
     <div className="post-container">
         <div className="user-container">
-            <img src="Profile.png" style={{width: "40px", height: "40px"}}></img>
-            <p>user name</p>
+            <img src={ProfileIcon} style={{width: "40px", height: "40px"}}/>
+            <div>user name</div>
         </div>
+
         <div className="header">
             Looking for a team
         </div>
