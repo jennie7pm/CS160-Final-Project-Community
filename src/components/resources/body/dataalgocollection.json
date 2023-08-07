@@ -472,6 +472,184 @@
         "owner": "MIT 6.006",
         "name": "Binary Trees",
         "link": "https://www.youtube.com/watch?v=76dhtgZt38A"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Search Tree: Implementation in C/C++",
+        "link": "https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "BST Implementation: Memory Allocation in Stack and Heap",
+        "link": "https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Find min and max in a Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=Ut90klNN264&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=30"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Find Height of a Binary Tree",
+        "link": "https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree Traversal: Breadth-first and Depth-first Strategies",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=32"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree: Level Order Traversal",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=33"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree Traversal: Preorder, Inorder, Postorder",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=34"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Check If A Binary Tree is Binary Search Tree or Not",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=35"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Delete Node from Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Inorder Successor in a Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=37"
+      }
+    ]
+  },
+  {
+    "title": "Heap / Priority Queue",
+    "content": [
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Heap",
+        "link": "https://en.wikipedia.org/wiki/Heap_(data_structure)"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Priority Queues: Introduction",
+        "link": "https://www.coursera.org/lecture/data-structures/introduction-2OpTs"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Priority Queues: Binary Heaps",
+        "link": "https://www.coursera.org/lecture/data-structures/binary-trees-GRV2q"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Basic Operations",
+        "link": "https://www.coursera.org/lecture/data-structures/basic-operations-0g1dl"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Complete Binary Trees",
+        "link": "https://www.coursera.org/lecture/data-structures/complete-binary-trees-gl5Ni"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Pseudocode",
+        "link": "https://www.coursera.org/lecture/data-structures/pseudocode-HxQo9"
+      },
+      {
+        "type": "Video",
+        "owner": "Shai Simonson",
+        "name": "Heap Sort",
+        "link": "https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Heap Sort",
+        "link": "https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Building a Heap",
+        "link": "https://www.coursera.org/lecture/data-structures/building-a-heap-dwrOS"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Heaps and Heap Sort",
+        "link": "https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Priority Queues",
+        "link": "https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE"
+      },
+      {
+        "type": "Video",
+        "owner": "SJSU",
+        "name": "Linear Time BuildHeap",
+        "link": "https://www.youtube.com/watch?v=MiyLo8adrWw"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Heaps",
+        "link": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNsyqgPW-DNwUeT8F8uhWc6"
+      }
+    ]
+  },
+  {
+    "title": "Sorting",
+    "content": [
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Sorting Algorithm",
+        "link": "https://en.wikipedia.org/wiki/Sorting_algorithm#Stability"
+      },
+      {
+        "type": "Article",
+        "owner": "GeeksforGeeks",
+        "name": "Stable and Unstable Sorting Algorithms",
+        "link": "https://www.geeksforgeeks.org/stable-and-unstable-sorting-algorithms/"
+      },
+      {
+        "type": "Article",
+        "owner": "GeeksforGeeks",
+        "name": "Merge Sort for Linked Lists",
+        "link": "https://www.geeksforgeeks.org/merge-sort-for-linked-list/"
+      },
+      {
+        "type": "Video",
+        "owner": "Princeton",
+        "name": "Buttom-up Mergesort",
+        "link": "https://www.coursera.org/lecture/algorithms-part1/bottom-up-mergesort-PWNEl"
+      },
+      {
+        "type": "Video",
+        "owner": "Princeton",
+        "name": "Sorting Complexity",
+        "link": "https://www.coursera.org/lecture/algorithms-part1/sorting-complexity-xAltF"
       }
     ]
   }
