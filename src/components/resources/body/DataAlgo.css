@@ -49,3 +49,23 @@
 .rotate-180 {
     transform: rotate(180deg);
 }
+
+.resource-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.link-button p {
+    color: var(--primary, #455487);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    align-self: center;
+}
