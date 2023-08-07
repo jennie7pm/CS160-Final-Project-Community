@@ -1,5 +1,5 @@
 import "./Post.css";
-import ProfileIcon from "./Profile.png"
+import ProfileIcon from "./images/Profile.png"
 export function Post(){
     return (
     <div className="post-container">
