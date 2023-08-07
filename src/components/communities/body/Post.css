@@ -28,10 +28,20 @@
     font-weight: 400;
     line-height: normal;
 }
+
+.post-container p{
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 .heart-comment-container {
-    width: 100px;
     display: flex;
     margin-bottom: 20px;
+    margin-top: -30px;
 }
 .heart-comment-container button{
     display: flex;
