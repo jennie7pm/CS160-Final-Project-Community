@@ -1,5 +1,5 @@
 import PeerInterviewIcon from "../images/Peer-Interview.png";
-import { BodyHeader } from "./BodyHeader.js";
+import { BodyHeader } from "../../toolbox/header /BodyHeader.js";
 import { CreatePost } from "./CreatePost";
 
 export function PeerInterview(){

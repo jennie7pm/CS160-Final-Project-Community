@@ -1,6 +1,6 @@
 .content {
     display: flex;
-    padding: 60px 120px;
+    padding: 0px 60px;
     flex-direction: column;
     align-items: center;
     gap: 45px;
@@ -17,12 +17,7 @@
     font-weight: 700;
     line-height: normal;
 }
-.title {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    align-self: stretch;
-}
+
 .section {
     display: flex;
     flex-direction: column;

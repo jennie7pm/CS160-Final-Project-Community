@@ -23,5 +23,6 @@ export function SideMenu({header, rowsArr}){
                 </div>)
                 )
             }
+
         </div>);
 }

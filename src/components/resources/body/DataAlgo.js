@@ -12,6 +12,7 @@ import TopCoderLogo from "../images/logos/topcoder.png";
 import GeeksforGeeksLogo from "../images/logos/geeksforgeeks.png";
 import CodilityLogo from "../images/logos/codility.png";
 import AlgoExpertLogo from "../images/logos/algoexpert.png";
+import { BodyHeader } from "../../toolbox/header /BodyHeader";
 
 function Collapsible({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,16 +72,11 @@ function Resources({ resources, links }) {
 }
 
 export function DataAlgo() {
+  let titleArr = [DataAlgoIcon, "Data Structures and Algorithms", '']
   return (
+    <>
+    <BodyHeader titleArr={titleArr}/>
     <div className="content">
-      <div className="title">
-        <img
-          className="title-icon"
-          src={DataAlgoIcon}
-          alt="Data Structures and Algorithms"
-        ></img>
-        <h1>Data Structures and Algorithms</h1>
-      </div>
       <div className="section">
         <div className="section-header">
           <h2>Practice Tools</h2>
@@ -302,6 +298,7 @@ export function DataAlgo() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 export default DataAlgo;

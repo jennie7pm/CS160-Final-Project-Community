@@ -35,6 +35,7 @@
     border: none;
     outline: none;
     border-radius: 10px;
+    font-size: 16px !important;
 }
 
 .submit-button{
@@ -55,4 +56,10 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1055px){
+    .post-form textarea{
+        font-size: 14px !important;
+    }
 }
