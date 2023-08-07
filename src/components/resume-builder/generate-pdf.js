@@ -10,7 +10,12 @@ const styles = StyleSheet.create({
         margin: 10,
         padding: 10,
         flexGrow: 1
-    }
+    },
+    title: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginBottom: 10,
+    },
 });
 
 // Create Document Component
@@ -19,7 +24,7 @@ const MyDocument = ({ userData }) => (
         <Page size="A4" style={styles.page}>
 
             <View style={styles.section}>
-                <Text>RESUME</Text>
+                <Text class="title">RESUME</Text>
                 <br></br>
                 <Text>PROFILE</Text>
                 <br></br>
@@ -70,7 +75,7 @@ const MyDocument = ({ userData }) => (
                 <br></br>
                 <Text>contribution2: {userData.cont}</Text>
                 <br></br>
-                
+
                 <Text>LANGUAGES: </Text>
                 <br></br>
                 <Text>{userData.lang}</Text>
