@@ -16,7 +16,7 @@ export function Profile({ setUserData }) {
     };
 
     return (
-        <><p> Profile </p>
+        <><p className="heading"> Profile </p>
             <div className="resume-section">
                 <label>
                     Name:
@@ -59,7 +59,7 @@ export function Education({ setUserData }) {
     };
 
     return (
-        <><p>Education</p>
+        <><p className="heading">Education</p>
             <div className="resume-section">
                 {/* <h4>Education 1</h4> */}
                 <label>
@@ -114,7 +114,7 @@ export function Experience({ setUserData }) {
     };
 
     return (
-        <><p>Experiences</p>
+        <><p className="heading">Experiences</p>
             <div className="resume-section">
                 <label>
                     Position:
@@ -172,7 +172,7 @@ export function Project({ setUserData }) {
     };
 
     return (
-        <><p>Projects</p>
+        <><p className="heading">Projects</p>
             <div className="resume-section">
                 <h4>Project 1</h4>
                 <label>
@@ -203,7 +203,7 @@ export function Language({ setUserData }) {
     };
 
     return (
-        <><p>Languages</p>
+        <><p className="heading">Languages</p>
             <div className="resume-section">
                 <label>
                     Language:
@@ -222,7 +222,7 @@ export function Tool({ setUserData }) {
     };
 
     return (
-        <><p>Tool</p>
+        <><p className="heading">Tool</p>
             <div className="resume-section">
                 <label>
                     Tool:

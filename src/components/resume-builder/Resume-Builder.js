@@ -14,8 +14,12 @@ function ResumeBuilder() {
         <NavBar navButtonSelection="resumeBuilder" />
         <div className="sideBar-Body-container">
             <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} />
-            <ResumeBuilderBody />
+            {/* <ResumeBuilderBody /> */}
+            <div className="form-Body-container">
+                <ResumeBuilderBody />
+            </div>
         </div>
+        
     </>
 
     )
