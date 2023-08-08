@@ -3,7 +3,7 @@ import { useState } from "react";
 import heartIcon from "./images/heart.png";
 import commentIcon from "./images/comment.png";
 import { likePost, makeComment } from "../../../utils.js";
-const Post = (props) => {
+export const Post = (props) => {
   const [post, setPost] = useState(props.post);
   const [userName, setUserName] = useState(
     `${post.firstName} ${post.firstName}: `
@@ -99,4 +99,4 @@ const Post = (props) => {
   );
 };
 
-export default Post;
+

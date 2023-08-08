@@ -1,9 +1,9 @@
 import ProjectCollabIcon from "../images/Project-Collab.png";
-import Post from "./Post.js";
-import { BodyHeader } from "./BodyHeader.js";
+import {Post} from "./Post.js";
+import {BodyHeader} from "../../toolbox/header/BodyHeader";
 import { useEffect, useState } from "react";
 import { getFeedPost } from "../../../utils.js";
-import CreatePost from "./CreatePost";
+import {CreatePost} from "./CreatePost";
 
 export function ProjectCollab() {
   let description =

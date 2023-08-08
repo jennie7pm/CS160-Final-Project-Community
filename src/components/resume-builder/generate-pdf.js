@@ -125,7 +125,7 @@ const MyDocument = ({ userData }) => (
 
                 <Text style={styles.subtitle}>EDUCATION</Text>
                 <br></br>
-                <Text style={styles.main_info}>Institution: {userData?.uni?.toUpperCase()}</Text>
+                <Text style={styles.main_info}>Institution: {userData.uni.toUpperCase()}</Text>
                 <br></br>
                 <Text style={{ fontSize: 12, fontStyle: 'italic' }}>Degree: {userData.degree}</Text>
                 <br></br>
@@ -140,7 +140,7 @@ const MyDocument = ({ userData }) => (
                 <Text style={styles.subtitle}>EXPERIENCES</Text>
                 <br></br>
                 <View style={styles.rowContainer}>
-                    <Text style={styles.main_info}>position: {userData?.position?.toUpperCase()}</Text>
+                    <Text style={styles.main_info}>position: {userData.position.toUpperCase()}</Text>
                     <Text style={styles.main_info}>city: {userData.location}</Text>
                 </View>
                 {/* <Text style={styles.main_info}>position: {userData?.position?.toUpperCase()}</Text> */}
@@ -176,16 +176,16 @@ const MyDocument = ({ userData }) => (
 
                 <Text style={styles.subtitle}>PROJECTS</Text>
                 <br></br>
-                <Text style= {styles.main_info}>projectname: {userData?.projectname?.toUpperCase()}</Text>
+                <Text style= {styles.main_info}>projectname: {userData.projectname.toUpperCase()}</Text>
                 <br></br>
                 <View style={styles.bulletContainer}>
                     <Text style={styles.bulletPoint}>•</Text>
-                    <Text style={styles.bulletContent}>contribution1: {userData.cont}</Text>
+                    <Text style={styles.bulletContent}>contribution1: {userData.contribution1}</Text>
                 </View>
                 <br></br>
                 <View style={styles.bulletContainer}>
                     <Text style={styles.bulletPoint}>•</Text>
-                    <Text style={styles.bulletContent}>contribution 2:: {userData.cont}</Text>
+                    <Text style={styles.bulletContent}>contribution 2:: {userData.contribution2}</Text>
                 </View>
                 <br></br>
 
