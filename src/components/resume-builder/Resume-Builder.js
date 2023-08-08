@@ -169,7 +169,6 @@ function ResumeBuilder() {
     };
 
 
-    // Function to add a new input field to a resume section
 // Function to add a new input field to a resume section
     const addInputField = (sectionIndex, sectionTitle) => {
         setResumeSections((prevSections) => {
