@@ -4,7 +4,8 @@ import "./Resume-Builder.css";
 import plusIcon from '../toolbox/images/add.png';
 import MyDocument from "./generate-pdf";
 import React, { useState } from 'react';
-import {ResumeBuilderBody} from "./ResumeBuilderBody.js";
+import { ResumeBuilderBody } from "./ResumeBuilderBody";
+
 
 function ResumeBuilder() {
     let sideMenuRowArr = [['Profile', null], ['Education', null], ['Work Experience', null], ['Project', null], ['Tool', null], ['Award', null], ['LeaderShip', null], ['Finish', null]];
