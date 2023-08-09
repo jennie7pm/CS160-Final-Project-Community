@@ -177,7 +177,7 @@ export function Project({ setUserData }) {
                 <h4>Project 1</h4>
                 <label>
                     Title:
-                    <input type="text" name="title" placeholder="SmartHealth Tracker" onChange={handleProjectInputChange} />
+                    <input type="text" name="projectname" placeholder="SmartHealth Tracker" onChange={handleProjectInputChange} />
                 </label>
                 <br></br>
                 <label>
